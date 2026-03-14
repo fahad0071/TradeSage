@@ -4,8 +4,8 @@
 Clone the repository
 
 ```bash
-  git clone https://github.com/kill3rstabs/TradeSageChatbot
-  cd TradeSageChatbot
+  git clone [https://github.com/fahad0071/TradeSage]
+  cd TradeSage
 ```
 
 
