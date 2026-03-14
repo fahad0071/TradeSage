@@ -1,0 +1,871 @@
+SQL Query,Prompt,Response
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '999999'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 1: HS06 Code [999999], Total Trade Value: [735187919946.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '270900'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 2: HS06 Code [270900], Total Trade Value: [593039721531.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '710812'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 3: HS06 Code [710812], Total Trade Value: [323605781815.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '300490'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 4: HS06 Code [300490], Total Trade Value: [308861160721.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '854239'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 5: HS06 Code [854239], Total Trade Value: [278955829804.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '854231'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 6: HS06 Code [854231], Total Trade Value: [274742558552.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '271019'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 7: HS06 Code [271019], Total Trade Value: [272742128945.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '851712'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 8: HS06 Code [851712], Total Trade Value: [258381174748.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870323'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 9: HS06 Code [870323], Total Trade Value: [212316885660.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '854232'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 10: HS06 Code [854232], Total Trade Value: [199521715619.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '271012'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 11: HS06 Code [271012], Total Trade Value: [187663229180.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '847130'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 12: HS06 Code [847130], Total Trade Value: [163407495826.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '851762'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 13: HS06 Code [851762], Total Trade Value: [162536671336.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '300215'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 14: HS06 Code [300215], Total Trade Value: [129314275498.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '851770'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 15: HS06 Code [851770], Total Trade Value: [128027341690.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '260111'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 16: HS06 Code [260111], Total Trade Value: [125179843786.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '847330'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 17: HS06 Code [847330], Total Trade Value: [123512007133.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '710813'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 18: HS06 Code [710813], Total Trade Value: [90699326872.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870322'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 19: HS06 Code [870322], Total Trade Value: [88214536592.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870899'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 20: HS06 Code [870899], Total Trade Value: [75166470899.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '847150'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 21: HS06 Code [847150], Total Trade Value: [72156924233.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870332'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 22: HS06 Code [870332], Total Trade Value: [72035087748.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '630790'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 23: HS06 Code [630790], Total Trade Value: [70043778947.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870324'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 24: HS06 Code [870324], Total Trade Value: [69974535624.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '392690'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 25: HS06 Code [392690], Total Trade Value: [66771527623.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '850440'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 26: HS06 Code [850440], Total Trade Value: [64976361906.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '270112'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 27: HS06 Code [270112], Total Trade Value: [64787936700.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '880240'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 28: HS06 Code [880240], Total Trade Value: [64409011263.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '711319'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 29: HS06 Code [711319], Total Trade Value: [64271454909.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '120190'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 30: HS06 Code [120190], Total Trade Value: [63847693708.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '847170'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 31: HS06 Code [847170], Total Trade Value: [63528819540.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '271121'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 32: HS06 Code [271121], Total Trade Value: [63147798250.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870829'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 33: HS06 Code [870829], Total Trade Value: [62320925550.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870840'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 34: HS06 Code [870840], Total Trade Value: [60788186905.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '260300'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 35: HS06 Code [260300], Total Trade Value: [60484431402.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '853710'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 36: HS06 Code [853710], Total Trade Value: [58353521978.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '854140'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 37: HS06 Code [854140], Total Trade Value: [58327995984.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '740311'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 38: HS06 Code [740311], Total Trade Value: [58216456101.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '901890'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 39: HS06 Code [901890], Total Trade Value: [56895282912.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '880330'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 40: HS06 Code [880330], Total Trade Value: [54675226901.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '852990'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 41: HS06 Code [852990], Total Trade Value: [53969604185.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '950300'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 42: HS06 Code [950300], Total Trade Value: [53722218791.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870340'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 43: HS06 Code [870340], Total Trade Value: [52986017253.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '330499'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 44: HS06 Code [330499], Total Trade Value: [50788554163.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '848180'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 45: HS06 Code [848180], Total Trade Value: [50344970799.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '710239'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 46: HS06 Code [710239], Total Trade Value: [50281805388.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '848620'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 47: HS06 Code [848620], Total Trade Value: [49174161588.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '852872'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 48: HS06 Code [852872], Total Trade Value: [49105102988.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '853400'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 49: HS06 Code [853400], Total Trade Value: [47902074782.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '271111'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 50: HS06 Code [271111], Total Trade Value: [46483513580.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '210690'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 51: HS06 Code [210690], Total Trade Value: [46411592880.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '841112'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 52: HS06 Code [841112], Total Trade Value: [44988706214.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '850760'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 53: HS06 Code [850760], Total Trade Value: [44959785228.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '870421'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 54: HS06 Code [870421], Total Trade Value: [43974420220.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '847989'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 55: HS06 Code [847989], Total Trade Value: [43581858139.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '271112'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 56: HS06 Code [271112], Total Trade Value: [42773431866.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '732690'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 57: HS06 Code [732690], Total Trade Value: [42030547028.0] US$"
+"
+            SELECT p.HS06, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE 
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 2 AND
+                p.HS06 = '100199'
+            GROUP BY p.HS06
+        ",,"In 2018, the products ranked by trade value, based on trade flow code 2, are as follows:
+Product 58: HS06 Code [100199], Total Trade Value: [41195250115.0] US$"

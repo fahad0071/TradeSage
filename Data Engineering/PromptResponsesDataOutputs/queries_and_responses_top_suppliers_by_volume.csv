@@ -1,0 +1,1365 @@
+SQL Query,Prompt,Response
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20221231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Nigeria'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20221231 for Nigeria?,"In 20221231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Nigeria, based on trade flow code 1, are as follows:
+Supplier 1: United States, Share Percentage: 53.60%
+Supplier 2: China, Share Percentage: 21.52%
+Supplier 3: Belgium, Share Percentage: 6.78%
+Supplier 4: Japan, Share Percentage: 4.83%
+Supplier 5: Canada, Share Percentage: 2.78%
+Supplier 6: Thailand, Share Percentage: 2.73%
+Supplier 7: Germany, Share Percentage: 2.12%
+Supplier 8: United Arab Emirates, Share Percentage: 2.03%
+Supplier 9: Italy, Share Percentage: 1.37%
+Supplier 10: South Africa, Share Percentage: 1.21%
+Supplier 11: Jordan, Share Percentage: 1.02%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Fiji'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Fiji?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Fiji, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 80.07%
+Supplier 2: Korea, Rep., Share Percentage: 7.68%
+Supplier 3: Thailand, Share Percentage: 3.25%
+Supplier 4: China, Share Percentage: 2.23%
+Supplier 5: India, Share Percentage: 1.97%
+Supplier 6: New Zealand, Share Percentage: 1.53%
+Supplier 7: Australia, Share Percentage: 0.76%
+Supplier 8: Papua New Guinea, Share Percentage: 0.72%
+Supplier 9: Malaysia, Share Percentage: 0.66%
+Supplier 10: Singapore, Share Percentage: 0.60%
+Supplier 11: France, Share Percentage: 0.53%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Maldives'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Maldives?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Maldives, based on trade flow code 1, are as follows:
+Supplier 1: United Arab Emirates, Share Percentage: 51.55%
+Supplier 2: Japan, Share Percentage: 47.25%
+Supplier 3: Singapore, Share Percentage: 1.17%
+Supplier 4: India, Share Percentage: 0.03%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Maldives'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Maldives?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Maldives, based on trade flow code 1, are as follows:
+Supplier 1: United Arab Emirates, Share Percentage: 51.55%
+Supplier 2: Japan, Share Percentage: 47.25%
+Supplier 3: Singapore, Share Percentage: 1.17%
+Supplier 4: India, Share Percentage: 0.03%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Maldives'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Maldives?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Maldives, based on trade flow code 1, are as follows:
+Supplier 1: United Arab Emirates, Share Percentage: 51.55%
+Supplier 2: Japan, Share Percentage: 47.25%
+Supplier 3: Singapore, Share Percentage: 1.17%
+Supplier 4: India, Share Percentage: 0.03%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Maldives'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Maldives?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Maldives, based on trade flow code 1, are as follows:
+Supplier 1: United Arab Emirates, Share Percentage: 51.55%
+Supplier 2: Japan, Share Percentage: 47.25%
+Supplier 3: Singapore, Share Percentage: 1.17%
+Supplier 4: India, Share Percentage: 0.03%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'New Zealand'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for New Zealand?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in New Zealand, based on trade flow code 1, are as follows:
+Supplier 1: Japan, Share Percentage: 59.14%
+Supplier 2: Germany, Share Percentage: 12.80%
+Supplier 3: Korea, Rep., Share Percentage: 7.77%
+Supplier 4: United Kingdom, Share Percentage: 4.28%
+Supplier 5: Czech Republic, Share Percentage: 3.21%
+Supplier 6: Thailand, Share Percentage: 3.18%
+Supplier 7: United States, Share Percentage: 2.33%
+Supplier 8: China, Share Percentage: 2.13%
+Supplier 9: Belgium, Share Percentage: 1.88%
+Supplier 10: France, Share Percentage: 1.76%
+Supplier 11: Hungary, Share Percentage: 1.52%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."
+"
+        SELECT TOP 11 pc.Country, SUM(f.[Netweight (kg)]) AS TotalNetWeight
+        FROM FactTrade f
+        INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+        INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+        INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+        WHERE 
+            f.CreationDateKey = 20211231
+            AND f.Is_Active = 'Y'
+            AND rc.Country = 'Moldova'  -- Handle single quote in country name
+            AND pc.Country <> 'World'
+            AND [Trade Flow Code] = 1
+            AND p.HS06 = '870323'
+        GROUP BY pc.Country
+        ORDER BY TotalNetWeight DESC;
+    ",Who are the top 10 suppliers and what is their respective share percentage by volume for the product with HS06 code 870323 in 20211231 for Moldova?,"In 20211231, the top suppliers and their respective share percentages by volume for the product with HS06 code 870323 in Moldova, based on trade flow code 1, are as follows:
+Supplier 1: Slovak Republic, Share Percentage: 20.20%
+Supplier 2: United States, Share Percentage: 18.86%
+Supplier 3: Japan, Share Percentage: 14.63%
+Supplier 4: Czech Republic, Share Percentage: 13.50%
+Supplier 5: Germany, Share Percentage: 9.25%
+Supplier 6: Hungary, Share Percentage: 8.32%
+Supplier 7: Russian Federation, Share Percentage: 4.83%
+Supplier 8: Turkey, Share Percentage: 3.01%
+Supplier 9: United Kingdom, Share Percentage: 2.99%
+Supplier 10: China, Share Percentage: 2.87%
+Supplier 11: Korea, Rep., Share Percentage: 1.54%
+
+The results are ordered in descending order based on share percentage. This type of information is commonly obtained from trade or customs data, which tracks the import and export volumes of products by different countries. The HS06 code (Harmonized System 2007) is a standardized system for classifying products for customs and trade purposes. Trade flow code 1 typically represents imports, as opposed to exports or re-exports."

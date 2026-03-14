@@ -1,0 +1,19 @@
+SQL Query,Prompt,Response
+"
+    SELECT 
+        SUM(f.[Trade Value (US$)]) AS TotalTradeValue,
+        SUM(f.[Netweight (kg)]) AS TotalNetWeight,
+        SUM(f.[Trade Value (US$)]) / SUM(f.[Netweight (kg)]) AS CostPerKg
+    FROM FactTrade f
+    INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+    INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+    INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+    WHERE 
+        f.CreationDateKey = 20201231
+        AND f.Is_Active = 'Y'
+        AND rc.Country = 'Japan'
+        AND pc.Country <> 'World'
+        AND pc.Country = 'Malaysia'
+        AND [Trade Flow Code] = 1
+        AND p.HS06 = '870323'
+","Can you provide information on the landed cost for the product with HS06 code 870323, exported from Japan to Malaysia in 2020?","In 2020, the total landed cost for the product with HS06 code 870323, exported from Japan to Malaysia, based on trade flow code 1, is 4346.00 US$. The landed cost is calculated as the total trade value divided by the total net weight, resulting in a cost per kg of 14.20 US$."

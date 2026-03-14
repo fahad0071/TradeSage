@@ -1,0 +1,191 @@
+SQL Query,Prompt,Response
+"
+            SELECT TOP 10 rc.Country, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE
+                f.CreationDateKey = 20201231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 1
+            GROUP BY rc.Country
+            ORDER BY 2 DESC
+        ","Can you provide information on the top 10 countries importing the product in 20201231, including their names and respective total trade values?","In 20201231, the top 10 countries importing the product are:
+1. Country: Total Trade Value: TotalTradeValue US$
+2. Country: Total Trade Value: TotalTradeValue US$
+3. Country: Total Trade Value: TotalTradeValue US$
+4. Country: Total Trade Value: TotalTradeValue US$
+5. Country: Total Trade Value: TotalTradeValue US$
+6. Country: Total Trade Value: TotalTradeValue US$
+7. Country: Total Trade Value: TotalTradeValue US$
+8. Country: Total Trade Value: TotalTradeValue US$
+9. Country: Total Trade Value: TotalTradeValue US$
+10. Country: Total Trade Value: TotalTradeValue US$
+"
+"
+            SELECT TOP 10 rc.Country, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE
+                f.CreationDateKey = 20221231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 1
+            GROUP BY rc.Country
+            ORDER BY 2 DESC
+        ","Can you provide information on the top 10 countries importing the product in 20221231, including their names and respective total trade values?","In 20221231, the top 10 countries importing the product are:
+1. Country: Total Trade Value: TotalTradeValue US$
+2. Country: Total Trade Value: TotalTradeValue US$
+3. Country: Total Trade Value: TotalTradeValue US$
+4. Country: Total Trade Value: TotalTradeValue US$
+5. Country: Total Trade Value: TotalTradeValue US$
+6. Country: Total Trade Value: TotalTradeValue US$
+7. Country: Total Trade Value: TotalTradeValue US$
+8. Country: Total Trade Value: TotalTradeValue US$
+9. Country: Total Trade Value: TotalTradeValue US$
+10. Country: Total Trade Value: TotalTradeValue US$
+"
+"
+            SELECT TOP 10 rc.Country, SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+            FROM FactTrade f
+            INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+            INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+            INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+            WHERE
+                f.CreationDateKey = 20211231 AND
+                f.Is_Active = 'Y' AND
+                pc.Country <> 'World' AND
+                f.[Trade Flow Code] = 1
+            GROUP BY rc.Country
+            ORDER BY 2 DESC
+        ","Can you provide information on the top 10 countries importing the product in 20211231, including their names and respective total trade values?","In 20211231, the top 10 countries importing the product are:
+1. Country: Total Trade Value: TotalTradeValue US$
+2. Country: Total Trade Value: TotalTradeValue US$
+3. Country: Total Trade Value: TotalTradeValue US$
+4. Country: Total Trade Value: TotalTradeValue US$
+5. Country: Total Trade Value: TotalTradeValue US$
+6. Country: Total Trade Value: TotalTradeValue US$
+7. Country: Total Trade Value: TotalTradeValue US$
+8. Country: Total Trade Value: TotalTradeValue US$
+9. Country: Total Trade Value: TotalTradeValue US$
+10. Country: Total Trade Value: TotalTradeValue US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Wood; Wood Charcoal; Cork and Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Wood; Wood Charcoal; Cork and Articles category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Wood; Wood Charcoal; Cork and Articles category are:
+Sub-Industry 1: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 2: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 3: Sub-Industry, Total Trade Value: TotalTradeValue US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Base Metals and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Base Metals and Articles Thereof category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Base Metals and Articles Thereof category are:
+Sub-Industry 1: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 2: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 3: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 4: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 5: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 6: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 7: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 8: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 9: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 10: Sub-Industry, Total Trade Value: TotalTradeValue US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Chemical or Allied Industry Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Chemical or Allied Industry Products category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Chemical or Allied Industry Products category are:
+Sub-Industry 1: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 2: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 3: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 4: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 5: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 6: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 7: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 8: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 9: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 10: Sub-Industry, Total Trade Value: TotalTradeValue US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Prepared Foodstuffs; Sprites; Tobacco etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Prepared Foodstuffs; Sprites; Tobacco etc. category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Prepared Foodstuffs; Sprites; Tobacco etc. category are:
+Sub-Industry 1: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 2: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 3: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 4: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 5: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 6: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 7: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 8: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 9: Sub-Industry, Total Trade Value: TotalTradeValue US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Optical Articles; Medical or Surgical Instrument etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Optical Articles; Medical or Surgical Instrument etc. category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Optical Articles; Medical or Surgical Instrument etc. category are:
+Sub-Industry 1: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 2: Sub-Industry, Total Trade Value: TotalTradeValue US$
+Sub-Industry 3: Sub-Industry, Total Trade Value: TotalTradeValue US$
+"

@@ -1,0 +1,1167 @@
+SQL Query,Prompt,Response
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Wood; Wood Charcoal; Cork and Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Wood; Wood Charcoal; Cork and Articles in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Wood; Wood Charcoal; Cork and Articles, is (140917700187.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Base Metals and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Base Metals and Articles Thereof in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Base Metals and Articles Thereof, is (1111297028594.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Chemical or Allied Industry Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Chemical or Allied Industry Products in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Chemical or Allied Industry Products, is (1856687030189.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Prepared Foodstuffs; Sprites; Tobacco etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Prepared Foodstuffs; Sprites; Tobacco etc. in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Prepared Foodstuffs; Sprites; Tobacco etc., is (619261399973.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Optical Articles; Medical or Surgical Instrument etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Optical Articles; Medical or Surgical Instrument etc. in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Optical Articles; Medical or Surgical Instrument etc., is (646949988270.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Miscellaneous Manufactured Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Miscellaneous Manufactured Articles in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Miscellaneous Manufactured Articles, is (397557843886.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Articles of Stone; Plaster; Cement etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Articles of Stone; Plaster; Cement etc. in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Articles of Stone; Plaster; Cement etc., is (164123743902.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Footwear; Headger; Articles of Human Hairs etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Footwear; Headger; Articles of Human Hairs etc. in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Footwear; Headger; Articles of Human Hairs etc., is (138113512682.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Vehicles; Aircraft and Transport Equipment'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Vehicles; Aircraft and Transport Equipment in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Vehicles; Aircraft and Transport Equipment, is (1530417810736.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Plastics; Rubber and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Plastics; Rubber and Articles Thereof in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Plastics; Rubber and Articles Thereof, is (782164134972.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Mineral Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Mineral Products in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Mineral Products, is (1930478886555.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Live Animal & Animal Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Live Animal & Animal Products in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Live Animal & Animal Products, is (371602296183.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Vegetable, Fruits and Agri Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ","I want to understand the import trends for Vegetable, Fruits and Agri Products in 20201231. Can you provide the overall trade value for this industry category?","In 20201231, the total import value of Vegetable, Fruits and Agri Products, is (550410040206.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Works of Art; Collectors Pieces and Antiques'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Works of Art; Collectors Pieces and Antiques in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Works of Art; Collectors Pieces and Antiques, is (431501041439.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Textile and Textiles Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Textile and Textiles Articles in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Textile and Textiles Articles, is (709810400960.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Arms; Ammunition and Accessories Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Arms; Ammunition and Accessories Thereof in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Arms; Ammunition and Accessories Thereof, is (10372945739.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Raw Hides; Skin; Leather and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Raw Hides; Skin; Leather and Articles Thereof in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Raw Hides; Skin; Leather and Articles Thereof, is (83984228645.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Machinery; Mechanical Appliances etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Machinery; Mechanical Appliances etc. in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Machinery; Mechanical Appliances etc., is (5101445998973.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Natural or Cultured Pearls; Precious Stones etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Natural or Cultured Pearls; Precious Stones etc. in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Natural or Cultured Pearls; Precious Stones etc., is (713222875803.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Animal or Vegetable Fat and Oil'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Animal or Vegetable Fat and Oil in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Animal or Vegetable Fat and Oil, is (104106506293.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Pulp of Wood; or Other Fiber Cellulosic Material'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Pulp of Wood; or Other Fiber Cellulosic Material in 20201231. Can you provide the overall trade value for this industry category?,"In 20201231, the total import value of Pulp of Wood; or Other Fiber Cellulosic Material, is (236472787318.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Wood; Wood Charcoal; Cork and Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Wood; Wood Charcoal; Cork and Articles in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Wood; Wood Charcoal; Cork and Articles, is (193362011557.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Base Metals and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Base Metals and Articles Thereof in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Base Metals and Articles Thereof, is (1574499225418.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Chemical or Allied Industry Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Chemical or Allied Industry Products in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Chemical or Allied Industry Products, is (2284257456673.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Prepared Foodstuffs; Sprites; Tobacco etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Prepared Foodstuffs; Sprites; Tobacco etc. in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Prepared Foodstuffs; Sprites; Tobacco etc., is (697774240447.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Optical Articles; Medical or Surgical Instrument etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Optical Articles; Medical or Surgical Instrument etc. in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Optical Articles; Medical or Surgical Instrument etc., is (745583944779.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Miscellaneous Manufactured Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Miscellaneous Manufactured Articles in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Miscellaneous Manufactured Articles, is (501390543825.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Articles of Stone; Plaster; Cement etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Articles of Stone; Plaster; Cement etc. in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Articles of Stone; Plaster; Cement etc., is (201733986512.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Footwear; Headger; Articles of Human Hairs etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Footwear; Headger; Articles of Human Hairs etc. in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Footwear; Headger; Articles of Human Hairs etc., is (165896967798.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Vehicles; Aircraft and Transport Equipment'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Vehicles; Aircraft and Transport Equipment in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Vehicles; Aircraft and Transport Equipment, is (1771964040748.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Plastics; Rubber and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Plastics; Rubber and Articles Thereof in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Plastics; Rubber and Articles Thereof, is (1024214433296.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Mineral Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Mineral Products in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Mineral Products, is (3039780039586.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Live Animal & Animal Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Live Animal & Animal Products in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Live Animal & Animal Products, is (421129080022.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Vegetable, Fruits and Agri Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ","I want to understand the import trends for Vegetable, Fruits and Agri Products in 20211231. Can you provide the overall trade value for this industry category?","In 20211231, the total import value of Vegetable, Fruits and Agri Products, is (653764198526.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Works of Art; Collectors Pieces and Antiques'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Works of Art; Collectors Pieces and Antiques in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Works of Art; Collectors Pieces and Antiques, is (677672967556.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Textile and Textiles Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Textile and Textiles Articles in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Textile and Textiles Articles, is (785492984657.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Arms; Ammunition and Accessories Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Arms; Ammunition and Accessories Thereof in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Arms; Ammunition and Accessories Thereof, is (12360840994.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Raw Hides; Skin; Leather and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Raw Hides; Skin; Leather and Articles Thereof in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Raw Hides; Skin; Leather and Articles Thereof, is (103857979867.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Machinery; Mechanical Appliances etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Machinery; Mechanical Appliances etc. in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Machinery; Mechanical Appliances etc., is (6140833316271.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Natural or Cultured Pearls; Precious Stones etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Natural or Cultured Pearls; Precious Stones etc. in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Natural or Cultured Pearls; Precious Stones etc., is (867543460001.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Animal or Vegetable Fat and Oil'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Animal or Vegetable Fat and Oil in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Animal or Vegetable Fat and Oil, is (148657412856.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20211231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Pulp of Wood; or Other Fiber Cellulosic Material'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Pulp of Wood; or Other Fiber Cellulosic Material in 20211231. Can you provide the overall trade value for this industry category?,"In 20211231, the total import value of Pulp of Wood; or Other Fiber Cellulosic Material, is (278327179865.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Wood; Wood Charcoal; Cork and Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Wood; Wood Charcoal; Cork and Articles in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Wood; Wood Charcoal; Cork and Articles, is (163555867082.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Base Metals and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Base Metals and Articles Thereof in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Base Metals and Articles Thereof, is (1391259703039.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Chemical or Allied Industry Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Chemical or Allied Industry Products in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Chemical or Allied Industry Products, is (2199074105552.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Prepared Foodstuffs; Sprites; Tobacco etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Prepared Foodstuffs; Sprites; Tobacco etc. in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Prepared Foodstuffs; Sprites; Tobacco etc., is (613967831841.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Optical Articles; Medical or Surgical Instrument etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Optical Articles; Medical or Surgical Instrument etc. in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Optical Articles; Medical or Surgical Instrument etc., is (601407487109.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Miscellaneous Manufactured Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Miscellaneous Manufactured Articles in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Miscellaneous Manufactured Articles, is (464882439140.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Articles of Stone; Plaster; Cement etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Articles of Stone; Plaster; Cement etc. in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Articles of Stone; Plaster; Cement etc., is (175021191532.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Footwear; Headger; Articles of Human Hairs etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Footwear; Headger; Articles of Human Hairs etc. in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Footwear; Headger; Articles of Human Hairs etc., is (174093129430.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Vehicles; Aircraft and Transport Equipment'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Vehicles; Aircraft and Transport Equipment in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Vehicles; Aircraft and Transport Equipment, is (1562660065614.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Plastics; Rubber and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Plastics; Rubber and Articles Thereof in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Plastics; Rubber and Articles Thereof, is (834924955077.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Mineral Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Mineral Products in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Mineral Products, is (3413478346055.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Live Animal & Animal Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Live Animal & Animal Products in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Live Animal & Animal Products, is (361602859685.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Vegetable, Fruits and Agri Products'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ","I want to understand the import trends for Vegetable, Fruits and Agri Products in 20221231. Can you provide the overall trade value for this industry category?","In 20221231, the total import value of Vegetable, Fruits and Agri Products, is (549848237434.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Works of Art; Collectors Pieces and Antiques'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Works of Art; Collectors Pieces and Antiques in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Works of Art; Collectors Pieces and Antiques, is (776255560333.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Textile and Textiles Articles'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Textile and Textiles Articles in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Textile and Textiles Articles, is (750016871460.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Arms; Ammunition and Accessories Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Arms; Ammunition and Accessories Thereof in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Arms; Ammunition and Accessories Thereof, is (12647117505.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Raw Hides; Skin; Leather and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Raw Hides; Skin; Leather and Articles Thereof in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Raw Hides; Skin; Leather and Articles Thereof, is (96800276054.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Machinery; Mechanical Appliances etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Machinery; Mechanical Appliances etc. in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Machinery; Mechanical Appliances etc., is (4756910131242.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Natural or Cultured Pearls; Precious Stones etc.'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Natural or Cultured Pearls; Precious Stones etc. in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Natural or Cultured Pearls; Precious Stones etc., is (719378651626.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Animal or Vegetable Fat and Oil'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Animal or Vegetable Fat and Oil in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Animal or Vegetable Fat and Oil, is (135163013100.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20221231
+                and f.Is_Active='Y'
+                --and rc.Country='Canada'
+                and pc.Country<>'World'
+                and p.Industry='Pulp of Wood; or Other Fiber Cellulosic Material'
+                and [Trade Flow Code] in (1)
+                --group by rc.Country
+                --order by 2 desc
+
+            ",I want to understand the import trends for Pulp of Wood; or Other Fiber Cellulosic Material in 20221231. Can you provide the overall trade value for this industry category?,"In 20221231, the total import value of Pulp of Wood; or Other Fiber Cellulosic Material, is (248422787161.0,) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select top 10 rc.Country,sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                and pc.Country<>'World'
+                and p.Industry= 'Wood; Wood Charcoal; Cork and Articles'
+                and [Trade Flow Code] in (1)
+                group by rc.Country
+                order by 2 desc
+            ","I'm looking to identify the importing countries' shares of Wood; Wood Charcoal; Cork and Articles in 20201231. Can you provide information on the top countries importing these products, including their names and respective total trade values?","In 20201231, the total import value of Wood; Wood Charcoal; Cork and Articles, is ('United States', 23489724522.0) US$. This represents the cumulative trade value for the specified automobiles category."
+"
+                select top 10 rc.Country,sum(f.[Trade Value (US$)]) from FactTrade f
+                inner join DimCountry rc
+                on f.ReporterCountryId = rc.CountryID
+                inner join DimCountry pc
+                on f.PartnerCountryId = pc.CountryID
+                inner join DimProduct p
+                on f.ProductID = p.ProductID_SK
+                where f.CreationDateKey=20201231
+                and f.Is_Active='Y'
+                and pc.Country<>'World'
+                and p.Industry= 'Base Metals and Articles Thereof'
+                and [Trade Flow Code] in (1)
+                group by rc.Country
+                order by 2 desc
+            ","I'm looking to identify the importing countries' shares of Base Metals and Articles Thereof in 20201231. Can you provide information on the top countries importing these products, including their names and respective total trade values?","In 20201231, the total import value of Base Metals and Articles Thereof, is ('China', 118611172152.0) US$. This represents the cumulative trade value for the specified automobiles category."

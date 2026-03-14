@@ -1,0 +1,1260 @@
+SQL Query,Prompt,Response
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Base Metals and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Base Metals and Articles Thereof category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Base Metals and Articles Thereof category are:
+Sub-Industry 1: Iron and steel, Total Trade Value: 329505385207.0 US$
+Sub-Industry 2: Iron or steel articles, Total Trade Value: 274089522478.0 US$
+Sub-Industry 3: Aluminium and articles thereof, Total Trade Value: 161142660859.0 US$
+Sub-Industry 4: Copper and articles thereof, Total Trade Value: 153628819531.0 US$
+Sub-Industry 5: Metal; miscellaneous products of base metal, Total Trade Value: 65622813606.0 US$
+Sub-Industry 6: Tools, implements, cutlery, spoons and forks , Total Trade Value: 59010854411.0 US$
+Sub-Industry 7: Nickel and articles thereof, Total Trade Value: 24575336224.0 US$
+Sub-Industry 8: Metals; cermets; articles thereof, Total Trade Value: 17186321063.0 US$
+Sub-Industry 9: Zinc and articles thereof, Total Trade Value: 15815489204.0 US$
+Sub-Industry 10: Lead and articles thereof, Total Trade Value: 6416060301.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Chemical or Allied Industry Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Chemical or Allied Industry Products category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Chemical or Allied Industry Products category are:
+Sub-Industry 1: Pharmaceutical products, Total Trade Value: 697389085800.0 US$
+Sub-Industry 2: Organic chemicals, Total Trade Value: 403286425596.0 US$
+Sub-Industry 3: Chemical products n.e.s., Total Trade Value: 231548262806.0 US$
+Sub-Industry 4: Essential oils; cosmetic/toilet preparations, Total Trade Value: 146543268963.0 US$
+Sub-Industry 5: Inorganic chemical; organic Precious Metal , Total Trade Value: 116528726443.0 US$
+Sub-Industry 6: Dyeing extracts; paints, varnishes; inks, Total Trade Value: 79313314216.0 US$
+Sub-Industry 7: Soap; artificial waxes; other relavent, Total Trade Value: 66759387268.0 US$
+Sub-Industry 8: Fertilizers, Total Trade Value: 64645346915.0 US$
+Sub-Industry 9: Albuminoidal substances; glues; enzymes, Total Trade Value: 32886740978.0 US$
+Sub-Industry 10: Photographic or cinematographic goods, Total Trade Value: 13668963252.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Prepared Foodstuffs; Sprites; Tobacco etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Prepared Foodstuffs; Sprites; Tobacco etc. category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Prepared Foodstuffs; Sprites; Tobacco etc. category are:
+Sub-Industry 1: Beverages, spirits and vinegar, Total Trade Value: 119536638850.0 US$
+Sub-Industry 2: Food industries and animal fodder, Total Trade Value: 84832107984.0 US$
+Sub-Industry 3: Miscellaneous edible preparations, Total Trade Value: 84244243020.0 US$
+Sub-Industry 4: cereals flour; pastry cooking products, Total Trade Value: 81387389111.0 US$
+Sub-Industry 5: Fruit, Vegetables/other parts of plants, Total Trade Value: 61289223728.0 US$
+Sub-Industry 6: Cocoa and cocoa preparations, Total Trade Value: 48970095202.0 US$
+Sub-Industry 7: Meat, fish/crustaceans, preparations thereof, Total Trade Value: 48206462108.0 US$
+Sub-Industry 8: Sugars and sugar confectionery, Total Trade Value: 45432202886.0 US$
+Sub-Industry 9: Tobacco and tobacco substitutes, Total Trade Value: 45363037084.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Optical Articles; Medical or Surgical Instrument etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Optical Articles; Medical or Surgical Instrument etc. category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Optical Articles; Medical or Surgical Instrument etc. category are:
+Sub-Industry 1: Optical/Medical/Surgical Instruments & Parts, Total Trade Value: 598434136816.0 US$
+Sub-Industry 2: Clocks; watches & parts thereof, Total Trade Value: 41592621301.0 US$
+Sub-Industry 3: Musical instruments;  Accessories , Total Trade Value: 6923230153.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Miscellaneous Manufactured Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Miscellaneous Manufactured Articles category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Miscellaneous Manufactured Articles category are:
+Sub-Industry 1: Furniture Relevent; prefabricated buildings, Total Trade Value: 230046734501.0 US$
+Sub-Industry 2: Toys, sports; parts & accessories thereof, Total Trade Value: 119722695135.0 US$
+Sub-Industry 3: Miscellaneous manufactured articles, Total Trade Value: 47788414250.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Articles of Stone; Plaster; Cement etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Articles of Stone; Plaster; Cement etc. category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Articles of Stone; Plaster; Cement etc. category are:
+Sub-Industry 1: Glass and glassware, Total Trade Value: 72499583987.0 US$
+Sub-Industry 2: Stone, cement, mica/similar articles thereof, Total Trade Value: 46806726951.0 US$
+Sub-Industry 3: Ceramic products, Total Trade Value: 44817432964.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Footwear; Headger; Articles of Human Hairs etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Footwear; Headger; Articles of Human Hairs etc. category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Footwear; Headger; Articles of Human Hairs etc. category are:
+Sub-Industry 1: Footwear; gaiters;parts & articles, Total Trade Value: 120588352245.0 US$
+Sub-Industry 2: Headgear and parts thereof, Total Trade Value: 9365091655.0 US$
+Sub-Industry 3: Feather's articles; artificial flowers & human hair, Total Trade Value: 5470022623.0 US$
+Sub-Industry 4: Umbrellas, walking-sticks, Article thereof, Total Trade Value: 2690046159.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Vehicles; Aircraft and Transport Equipment'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Vehicles; Aircraft and Transport Equipment category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Vehicles; Aircraft and Transport Equipment category are:
+Sub-Industry 1: Vehicles;  parts and accessories thereof, Total Trade Value: 1272543796710.0 US$
+Sub-Industry 2: Aircraft, spacecraft and parts thereof, Total Trade Value: 158607834466.0 US$
+Sub-Industry 3: Ships, boats and floating structures, Total Trade Value: 72965123057.0 US$
+Sub-Industry 4: Railway, track ; signalling equipment , Total Trade Value: 26301056503.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Plastics; Rubber and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Plastics; Rubber and Articles Thereof category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Plastics; Rubber and Articles Thereof category are:
+Sub-Industry 1: Plastics and articles thereof, Total Trade Value: 601972137804.0 US$
+Sub-Industry 2: Rubber and articles thereof, Total Trade Value: 180191997168.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Mineral Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Mineral Products category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Mineral Products category are:
+Sub-Industry 1: Mineral fuels; oils; their distillation , Total Trade Value: 1593184845412.0 US$
+Sub-Industry 2: Ores, slag and ash, Total Trade Value: 287657039322.0 US$
+Sub-Industry 3: Salt; sulphur; stone; lime and cement, Total Trade Value: 49637001821.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Live Animal & Animal Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Live Animal & Animal Products category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Live Animal & Animal Products category are:
+Sub-Industry 1: Meat and edible meat offal, Total Trade Value: 135138064959.0 US$
+Sub-Industry 2: Fish & aquatic invertebrates, Total Trade Value: 113222185038.0 US$
+Sub-Industry 3: Dairy products; other relevent , Total Trade Value: 91079282125.0 US$
+Sub-Industry 4: Animals; live, Total Trade Value: 22758493182.0 US$
+Sub-Industry 5: Animal By-Products, Total Trade Value: 9404270879.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Vegetable, Fruits and Agri Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Vegetable, Fruits and Agri Products category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Vegetable, Fruits and Agri Products category are:
+Sub-Industry 1: Fruit & nuts; citrus fruit or melons, Total Trade Value: 139456818995.0 US$
+Sub-Industry 2: Cereals, Total Trade Value: 125630833181.0 US$
+Sub-Industry 3: Oil seeds; fruits;  medicinal plants; , Total Trade Value: 109239055534.0 US$
+Sub-Industry 4: Vegetables; roots & tubers; edible, Total Trade Value: 75810148498.0 US$
+Sub-Industry 5: Coffee, tea, mate and spices, Total Trade Value: 49999373840.0 US$
+Sub-Industry 6: Wheat, Related Milling Industry Products , Total Trade Value: 20740911941.0 US$
+Sub-Industry 7: Trees, roots; flowers;  other relavent, Total Trade Value: 20111335634.0 US$
+Sub-Industry 8: Lac; other vegetable saps & extracts, Total Trade Value: 7912085493.0 US$
+Sub-Industry 9: Vegetable, relevent not specified elsewhere , Total Trade Value: 1509477090.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Works of Art; Collectors Pieces and Antiques'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Works of Art; Collectors Pieces and Antiques category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Works of Art; Collectors Pieces and Antiques category are:
+Sub-Industry 1: Art Works; Collectors Pieces & antiques, Total Trade Value: 431501041439.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Textile and Textiles Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Textile and Textiles Articles category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Textile and Textiles Articles category are:
+Sub-Industry 1: Apparel; Clothing accessories; not knitted , Total Trade Value: 187090587031.0 US$
+Sub-Industry 2: Apparel; Clothing Accessories; knitted, Total Trade Value: 184652816956.0 US$
+Sub-Industry 3: Textiles and articles; clothing articles; rags, Total Trade Value: 122949409884.0 US$
+Sub-Industry 4: Cotton, Total Trade Value: 40526942022.0 US$
+Sub-Industry 5: Man-made filaments, Total Trade Value: 35208054802.0 US$
+Sub-Industry 6: Man-made staple fibres, Total Trade Value: 30120101583.0 US$
+Sub-Industry 7: Wadding, ropes&cables; articles thereof, Total Trade Value: 26929726841.0 US$
+Sub-Industry 8: Fabrics; knitted or crocheted, Total Trade Value: 26727352663.0 US$
+Sub-Industry 9: Textile fabrics; Industrial textile articles , Total Trade Value: 20365737062.0 US$
+Sub-Industry 10: Carpets;  Textile floor covers, Total Trade Value: 13141551789.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Arms; Ammunition and Accessories Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Arms; Ammunition and Accessories Thereof category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Arms; Ammunition and Accessories Thereof category are:
+Sub-Industry 1: Arms & ammunition; accessories thereof, Total Trade Value: 10372945739.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Raw Hides; Skin; Leather and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Raw Hides; Skin; Leather and Articles Thereof category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Raw Hides; Skin; Leather and Articles Thereof category are:
+Sub-Industry 1: Leather Artical; handbags & similar container, Total Trade Value: 66439968452.0 US$
+Sub-Industry 2: Raw hides/leather; skins (except furskins) , Total Trade Value: 14690698040.0 US$
+Sub-Industry 3: Furskins; artificial fur; thereof, Total Trade Value: 2853562153.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Machinery; Mechanical Appliances etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Machinery; Mechanical Appliances etc. category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Machinery; Mechanical Appliances etc. category are:
+Sub-Industry 1: Electrical; sound recorders&reproducers, Total Trade Value: 2953238995567.0 US$
+Sub-Industry 2: Nuclear reactors, boilers, parts thereof, Total Trade Value: 2148207003406.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Natural or Cultured Pearls; Precious Stones etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Natural or Cultured Pearls; Precious Stones etc. category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Natural or Cultured Pearls; Precious Stones etc. category are:
+Sub-Industry 1: Natural pearls; Precious stones, jewellery; coin, Total Trade Value: 713222875803.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Animal or Vegetable Fat and Oil'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Animal or Vegetable Fat and Oil category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Animal or Vegetable Fat and Oil category are:
+Sub-Industry 1: Animal or vegetable fats and oils , Total Trade Value: 104106506293.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20201231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Pulp of Wood; or Other Fiber Cellulosic Material'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Pulp of Wood; or Other Fiber Cellulosic Material category in 20201231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20201231, the top sub-industries within the Pulp of Wood; or Other Fiber Cellulosic Material category are:
+Sub-Industry 1: Paper; Paperboard; articles Thereof, Total Trade Value: 155779788120.0 US$
+Sub-Industry 2: Wood pulp/waste; Paper's scrap, Total Trade Value: 44868498011.0 US$
+Sub-Industry 3: Books, Newspapers, Printing Industry , Total Trade Value: 35824501187.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Wood; Wood Charcoal; Cork and Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Wood; Wood Charcoal; Cork and Articles category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Wood; Wood Charcoal; Cork and Articles category are:
+Sub-Industry 1: Wood; wood's articles; charcoal, Total Trade Value: 188380287961.0 US$
+Sub-Industry 2: Straw; plaiting; basketware & thereof, Total Trade Value: 2821364583.0 US$
+Sub-Industry 3: Cork and articles of cork, Total Trade Value: 2160359013.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Base Metals and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Base Metals and Articles Thereof category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Base Metals and Articles Thereof category are:
+Sub-Industry 1: Iron and steel, Total Trade Value: 533826735191.0 US$
+Sub-Industry 2: Iron or steel articles, Total Trade Value: 340197265925.0 US$
+Sub-Industry 3: Aluminium and articles thereof, Total Trade Value: 228902659382.0 US$
+Sub-Industry 4: Copper and articles thereof, Total Trade Value: 226147976574.0 US$
+Sub-Industry 5: Metal; miscellaneous products of base metal, Total Trade Value: 81048982276.0 US$
+Sub-Industry 6: Tools, implements, cutlery, spoons and forks , Total Trade Value: 71998690693.0 US$
+Sub-Industry 7: Nickel and articles thereof, Total Trade Value: 33010844099.0 US$
+Sub-Industry 8: Metals; cermets; articles thereof, Total Trade Value: 22857371214.0 US$
+Sub-Industry 9: Zinc and articles thereof, Total Trade Value: 19714756133.0 US$
+Sub-Industry 10: Lead and articles thereof, Total Trade Value: 8680499786.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Chemical or Allied Industry Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Chemical or Allied Industry Products category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Chemical or Allied Industry Products category are:
+Sub-Industry 1: Pharmaceutical products, Total Trade Value: 829106744800.0 US$
+Sub-Industry 2: Organic chemicals, Total Trade Value: 512640319949.0 US$
+Sub-Industry 3: Chemical products n.e.s., Total Trade Value: 294848982949.0 US$
+Sub-Industry 4: Essential oils; cosmetic/toilet preparations, Total Trade Value: 168408860108.0 US$
+Sub-Industry 5: Inorganic chemical; organic Precious Metal , Total Trade Value: 152378717257.0 US$
+Sub-Industry 6: Fertilizers, Total Trade Value: 97429566913.0 US$
+Sub-Industry 7: Dyeing extracts; paints, varnishes; inks, Total Trade Value: 94047587191.0 US$
+Sub-Industry 8: Soap; artificial waxes; other relavent, Total Trade Value: 75900136334.0 US$
+Sub-Industry 9: Albuminoidal substances; glues; enzymes, Total Trade Value: 39505394941.0 US$
+Sub-Industry 10: Photographic or cinematographic goods, Total Trade Value: 15297732557.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Prepared Foodstuffs; Sprites; Tobacco etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Prepared Foodstuffs; Sprites; Tobacco etc. category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Prepared Foodstuffs; Sprites; Tobacco etc. category are:
+Sub-Industry 1: Beverages, spirits and vinegar, Total Trade Value: 139702987436.0 US$
+Sub-Industry 2: Food industries and animal fodder, Total Trade Value: 103368874621.0 US$
+Sub-Industry 3: Miscellaneous edible preparations, Total Trade Value: 95072530661.0 US$
+Sub-Industry 4: cereals flour; pastry cooking products, Total Trade Value: 87792264731.0 US$
+Sub-Industry 5: Fruit, Vegetables/other parts of plants, Total Trade Value: 67014728273.0 US$
+Sub-Industry 6: Cocoa and cocoa preparations, Total Trade Value: 54650393225.0 US$
+Sub-Industry 7: Sugars and sugar confectionery, Total Trade Value: 52399351820.0 US$
+Sub-Industry 8: Meat, fish/crustaceans, preparations thereof, Total Trade Value: 51202567502.0 US$
+Sub-Industry 9: Tobacco and tobacco substitutes, Total Trade Value: 46570542178.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Optical Articles; Medical or Surgical Instrument etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Optical Articles; Medical or Surgical Instrument etc. category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Optical Articles; Medical or Surgical Instrument etc. category are:
+Sub-Industry 1: Optical/Medical/Surgical Instruments & Parts, Total Trade Value: 681471283374.0 US$
+Sub-Industry 2: Clocks; watches & parts thereof, Total Trade Value: 55682036770.0 US$
+Sub-Industry 3: Musical instruments;  Accessories , Total Trade Value: 8430624635.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Miscellaneous Manufactured Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Miscellaneous Manufactured Articles category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Miscellaneous Manufactured Articles category are:
+Sub-Industry 1: Furniture Relevent; prefabricated buildings, Total Trade Value: 287455460819.0 US$
+Sub-Industry 2: Toys, sports; parts & accessories thereof, Total Trade Value: 159393265178.0 US$
+Sub-Industry 3: Miscellaneous manufactured articles, Total Trade Value: 54541817828.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Articles of Stone; Plaster; Cement etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Articles of Stone; Plaster; Cement etc. category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Articles of Stone; Plaster; Cement etc. category are:
+Sub-Industry 1: Glass and glassware, Total Trade Value: 87344663720.0 US$
+Sub-Industry 2: Stone, cement, mica/similar articles thereof, Total Trade Value: 57329139994.0 US$
+Sub-Industry 3: Ceramic products, Total Trade Value: 57060182798.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Footwear; Headger; Articles of Human Hairs etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Footwear; Headger; Articles of Human Hairs etc. category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Footwear; Headger; Articles of Human Hairs etc. category are:
+Sub-Industry 1: Footwear; gaiters;parts & articles, Total Trade Value: 142135979512.0 US$
+Sub-Industry 2: Headgear and parts thereof, Total Trade Value: 12112047576.0 US$
+Sub-Industry 3: Feather's articles; artificial flowers & human hair, Total Trade Value: 8220456383.0 US$
+Sub-Industry 4: Umbrellas, walking-sticks, Article thereof, Total Trade Value: 3428484327.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Vehicles; Aircraft and Transport Equipment'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Vehicles; Aircraft and Transport Equipment category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Vehicles; Aircraft and Transport Equipment category are:
+Sub-Industry 1: Vehicles;  parts and accessories thereof, Total Trade Value: 1491884365995.0 US$
+Sub-Industry 2: Aircraft, spacecraft and parts thereof, Total Trade Value: 161220315324.0 US$
+Sub-Industry 3: Ships, boats and floating structures, Total Trade Value: 88544044507.0 US$
+Sub-Industry 4: Railway, track ; signalling equipment , Total Trade Value: 30315314922.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Plastics; Rubber and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Plastics; Rubber and Articles Thereof category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Plastics; Rubber and Articles Thereof category are:
+Sub-Industry 1: Plastics and articles thereof, Total Trade Value: 786819130147.0 US$
+Sub-Industry 2: Rubber and articles thereof, Total Trade Value: 237395303149.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Mineral Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Mineral Products category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Mineral Products category are:
+Sub-Industry 1: Mineral fuels; oils; their distillation , Total Trade Value: 2545037825740.0 US$
+Sub-Industry 2: Ores, slag and ash, Total Trade Value: 431152715756.0 US$
+Sub-Industry 3: Salt; sulphur; stone; lime and cement, Total Trade Value: 63589498090.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Live Animal & Animal Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Live Animal & Animal Products category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Live Animal & Animal Products category are:
+Sub-Industry 1: Meat and edible meat offal, Total Trade Value: 151746363973.0 US$
+Sub-Industry 2: Fish & aquatic invertebrates, Total Trade Value: 133754153795.0 US$
+Sub-Industry 3: Dairy products; other relevent , Total Trade Value: 100670986259.0 US$
+Sub-Industry 4: Animals; live, Total Trade Value: 24119770503.0 US$
+Sub-Industry 5: Animal By-Products, Total Trade Value: 10837805492.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Vegetable, Fruits and Agri Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Vegetable, Fruits and Agri Products category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Vegetable, Fruits and Agri Products category are:
+Sub-Industry 1: Cereals, Total Trade Value: 161924066264.0 US$
+Sub-Industry 2: Fruit & nuts; citrus fruit or melons, Total Trade Value: 155020659793.0 US$
+Sub-Industry 3: Oil seeds; fruits;  medicinal plants; , Total Trade Value: 139853931806.0 US$
+Sub-Industry 4: Vegetables; roots & tubers; edible, Total Trade Value: 82314141291.0 US$
+Sub-Industry 5: Coffee, tea, mate and spices, Total Trade Value: 55921765900.0 US$
+Sub-Industry 6: Trees, roots; flowers;  other relavent, Total Trade Value: 24650390254.0 US$
+Sub-Industry 7: Wheat, Related Milling Industry Products , Total Trade Value: 23347404309.0 US$
+Sub-Industry 8: Lac; other vegetable saps & extracts, Total Trade Value: 8875411469.0 US$
+Sub-Industry 9: Vegetable, relevent not specified elsewhere , Total Trade Value: 1856427440.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Works of Art; Collectors Pieces and Antiques'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Works of Art; Collectors Pieces and Antiques category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Works of Art; Collectors Pieces and Antiques category are:
+Sub-Industry 1: Art Works; Collectors Pieces & antiques, Total Trade Value: 677672967556.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Textile and Textiles Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Textile and Textiles Articles category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Textile and Textiles Articles category are:
+Sub-Industry 1: Apparel; Clothing Accessories; knitted, Total Trade Value: 230975551521.0 US$
+Sub-Industry 2: Apparel; Clothing accessories; not knitted , Total Trade Value: 200341816788.0 US$
+Sub-Industry 3: Textiles and articles; clothing articles; rags, Total Trade Value: 81796890411.0 US$
+Sub-Industry 4: Cotton, Total Trade Value: 54503296754.0 US$
+Sub-Industry 5: Man-made filaments, Total Trade Value: 46374266146.0 US$
+Sub-Industry 6: Man-made staple fibres, Total Trade Value: 37463463436.0 US$
+Sub-Industry 7: Fabrics; knitted or crocheted, Total Trade Value: 35157510592.0 US$
+Sub-Industry 8: Wadding, ropes&cables; articles thereof, Total Trade Value: 29891427098.0 US$
+Sub-Industry 9: Textile fabrics; Industrial textile articles , Total Trade Value: 24760550964.0 US$
+Sub-Industry 10: Carpets;  Textile floor covers, Total Trade Value: 16674232991.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Arms; Ammunition and Accessories Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Arms; Ammunition and Accessories Thereof category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Arms; Ammunition and Accessories Thereof category are:
+Sub-Industry 1: Arms & ammunition; accessories thereof, Total Trade Value: 12360840994.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Raw Hides; Skin; Leather and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Raw Hides; Skin; Leather and Articles Thereof category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Raw Hides; Skin; Leather and Articles Thereof category are:
+Sub-Industry 1: Leather Artical; handbags & similar container, Total Trade Value: 80893496429.0 US$
+Sub-Industry 2: Raw hides/leather; skins (except furskins) , Total Trade Value: 18681859232.0 US$
+Sub-Industry 3: Furskins; artificial fur; thereof, Total Trade Value: 4282624206.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Machinery; Mechanical Appliances etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Machinery; Mechanical Appliances etc. category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Machinery; Mechanical Appliances etc. category are:
+Sub-Industry 1: Electrical; sound recorders&reproducers, Total Trade Value: 3606596033626.0 US$
+Sub-Industry 2: Nuclear reactors, boilers, parts thereof, Total Trade Value: 2534237282645.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Natural or Cultured Pearls; Precious Stones etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Natural or Cultured Pearls; Precious Stones etc. category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Natural or Cultured Pearls; Precious Stones etc. category are:
+Sub-Industry 1: Natural pearls; Precious stones, jewellery; coin, Total Trade Value: 867543460001.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Animal or Vegetable Fat and Oil'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Animal or Vegetable Fat and Oil category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Animal or Vegetable Fat and Oil category are:
+Sub-Industry 1: Animal or vegetable fats and oils , Total Trade Value: 148657412856.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20211231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Pulp of Wood; or Other Fiber Cellulosic Material'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Pulp of Wood; or Other Fiber Cellulosic Material category in 20211231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20211231, the top sub-industries within the Pulp of Wood; or Other Fiber Cellulosic Material category are:
+Sub-Industry 1: Paper; Paperboard; articles Thereof, Total Trade Value: 180126637078.0 US$
+Sub-Industry 2: Wood pulp/waste; Paper's scrap, Total Trade Value: 59069800689.0 US$
+Sub-Industry 3: Books, Newspapers, Printing Industry , Total Trade Value: 39130742098.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Wood; Wood Charcoal; Cork and Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Wood; Wood Charcoal; Cork and Articles category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Wood; Wood Charcoal; Cork and Articles category are:
+Sub-Industry 1: Wood; wood's articles; charcoal, Total Trade Value: 158458981597.0 US$
+Sub-Industry 2: Straw; plaiting; basketware & thereof, Total Trade Value: 3125321666.0 US$
+Sub-Industry 3: Cork and articles of cork, Total Trade Value: 1971563819.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Base Metals and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Base Metals and Articles Thereof category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Base Metals and Articles Thereof category are:
+Sub-Industry 1: Iron and steel, Total Trade Value: 452959770215.0 US$
+Sub-Industry 2: Iron or steel articles, Total Trade Value: 314386390422.0 US$
+Sub-Industry 3: Aluminium and articles thereof, Total Trade Value: 243452611160.0 US$
+Sub-Industry 4: Copper and articles thereof, Total Trade Value: 152388844662.0 US$
+Sub-Industry 5: Metal; miscellaneous products of base metal, Total Trade Value: 73465725257.0 US$
+Sub-Industry 6: Tools, implements, cutlery, spoons and forks , Total Trade Value: 63153215140.0 US$
+Sub-Industry 7: Nickel and articles thereof, Total Trade Value: 35553481874.0 US$
+Sub-Industry 8: Metals; cermets; articles thereof, Total Trade Value: 24198093340.0 US$
+Sub-Industry 9: Zinc and articles thereof, Total Trade Value: 17480224423.0 US$
+Sub-Industry 10: Lead and articles thereof, Total Trade Value: 7158509339.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Chemical or Allied Industry Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Chemical or Allied Industry Products category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Chemical or Allied Industry Products category are:
+Sub-Industry 1: Pharmaceutical products, Total Trade Value: 792708941619.0 US$
+Sub-Industry 2: Organic chemicals, Total Trade Value: 533922349031.0 US$
+Sub-Industry 3: Chemical products n.e.s., Total Trade Value: 269292717234.0 US$
+Sub-Industry 4: Inorganic chemical; organic Precious Metal , Total Trade Value: 165518161819.0 US$
+Sub-Industry 5: Essential oils; cosmetic/toilet preparations, Total Trade Value: 131278185178.0 US$
+Sub-Industry 6: Fertilizers, Total Trade Value: 119555276592.0 US$
+Sub-Industry 7: Dyeing extracts; paints, varnishes; inks, Total Trade Value: 76753014971.0 US$
+Sub-Industry 8: Soap; artificial waxes; other relavent, Total Trade Value: 61150470159.0 US$
+Sub-Industry 9: Albuminoidal substances; glues; enzymes, Total Trade Value: 34059824642.0 US$
+Sub-Industry 10: Photographic or cinematographic goods, Total Trade Value: 10199024304.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Prepared Foodstuffs; Sprites; Tobacco etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Prepared Foodstuffs; Sprites; Tobacco etc. category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Prepared Foodstuffs; Sprites; Tobacco etc. category are:
+Sub-Industry 1: Beverages, spirits and vinegar, Total Trade Value: 127798948659.0 US$
+Sub-Industry 2: Food industries and animal fodder, Total Trade Value: 93686560614.0 US$
+Sub-Industry 3: Miscellaneous edible preparations, Total Trade Value: 77386298531.0 US$
+Sub-Industry 4: cereals flour; pastry cooking products, Total Trade Value: 75118448902.0 US$
+Sub-Industry 5: Fruit, Vegetables/other parts of plants, Total Trade Value: 65018952703.0 US$
+Sub-Industry 6: Meat, fish/crustaceans, preparations thereof, Total Trade Value: 48423860259.0 US$
+Sub-Industry 7: Cocoa and cocoa preparations, Total Trade Value: 48165691030.0 US$
+Sub-Industry 8: Sugars and sugar confectionery, Total Trade Value: 42668673498.0 US$
+Sub-Industry 9: Tobacco and tobacco substitutes, Total Trade Value: 35700397645.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Optical Articles; Medical or Surgical Instrument etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Optical Articles; Medical or Surgical Instrument etc. category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Optical Articles; Medical or Surgical Instrument etc. category are:
+Sub-Industry 1: Optical/Medical/Surgical Instruments & Parts, Total Trade Value: 544286226219.0 US$
+Sub-Industry 2: Clocks; watches & parts thereof, Total Trade Value: 49561952075.0 US$
+Sub-Industry 3: Musical instruments;  Accessories , Total Trade Value: 7559308815.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Miscellaneous Manufactured Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Miscellaneous Manufactured Articles category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Miscellaneous Manufactured Articles category are:
+Sub-Industry 1: Furniture Relevent; prefabricated buildings, Total Trade Value: 268276122591.0 US$
+Sub-Industry 2: Toys, sports; parts & accessories thereof, Total Trade Value: 148960470293.0 US$
+Sub-Industry 3: Miscellaneous manufactured articles, Total Trade Value: 47645846256.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Articles of Stone; Plaster; Cement etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Articles of Stone; Plaster; Cement etc. category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Articles of Stone; Plaster; Cement etc. category are:
+Sub-Industry 1: Glass and glassware, Total Trade Value: 71356619721.0 US$
+Sub-Industry 2: Ceramic products, Total Trade Value: 52317866668.0 US$
+Sub-Industry 3: Stone, cement, mica/similar articles thereof, Total Trade Value: 51346705143.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Footwear; Headger; Articles of Human Hairs etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Footwear; Headger; Articles of Human Hairs etc. category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Footwear; Headger; Articles of Human Hairs etc. category are:
+Sub-Industry 1: Footwear; gaiters;parts & articles, Total Trade Value: 148685079580.0 US$
+Sub-Industry 2: Headgear and parts thereof, Total Trade Value: 13724145768.0 US$
+Sub-Industry 3: Feather's articles; artificial flowers & human hair, Total Trade Value: 7727531957.0 US$
+Sub-Industry 4: Umbrellas, walking-sticks, Article thereof, Total Trade Value: 3956372125.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Vehicles; Aircraft and Transport Equipment'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Vehicles; Aircraft and Transport Equipment category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Vehicles; Aircraft and Transport Equipment category are:
+Sub-Industry 1: Vehicles;  parts and accessories thereof, Total Trade Value: 1327621110074.0 US$
+Sub-Industry 2: Aircraft, spacecraft and parts thereof, Total Trade Value: 141579367070.0 US$
+Sub-Industry 3: Ships, boats and floating structures, Total Trade Value: 67175395478.0 US$
+Sub-Industry 4: Railway, track ; signalling equipment , Total Trade Value: 26284192992.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Plastics; Rubber and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Plastics; Rubber and Articles Thereof category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Plastics; Rubber and Articles Thereof category are:
+Sub-Industry 1: Plastics and articles thereof, Total Trade Value: 642471967491.0 US$
+Sub-Industry 2: Rubber and articles thereof, Total Trade Value: 192452987586.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Mineral Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Mineral Products category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Mineral Products category are:
+Sub-Industry 1: Mineral fuels; oils; their distillation , Total Trade Value: 3168891240697.0 US$
+Sub-Industry 2: Ores, slag and ash, Total Trade Value: 194150042961.0 US$
+Sub-Industry 3: Salt; sulphur; stone; lime and cement, Total Trade Value: 50437062397.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Live Animal & Animal Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Live Animal & Animal Products category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Live Animal & Animal Products category are:
+Sub-Industry 1: Fish & aquatic invertebrates, Total Trade Value: 122127848397.0 US$
+Sub-Industry 2: Meat and edible meat offal, Total Trade Value: 121161803067.0 US$
+Sub-Industry 3: Dairy products; other relevent , Total Trade Value: 89092127723.0 US$
+Sub-Industry 4: Animals; live, Total Trade Value: 18722107802.0 US$
+Sub-Industry 5: Animal By-Products, Total Trade Value: 10498972696.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Vegetable, Fruits and Agri Products'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Vegetable, Fruits and Agri Products category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Vegetable, Fruits and Agri Products category are:
+Sub-Industry 1: Cereals, Total Trade Value: 138545582223.0 US$
+Sub-Industry 2: Fruit & nuts; citrus fruit or melons, Total Trade Value: 125808862033.0 US$
+Sub-Industry 3: Oil seeds; fruits;  medicinal plants; , Total Trade Value: 101919443463.0 US$
+Sub-Industry 4: Vegetables; roots & tubers; edible, Total Trade Value: 66833067953.0 US$
+Sub-Industry 5: Coffee, tea, mate and spices, Total Trade Value: 62786315779.0 US$
+Sub-Industry 6: Trees, roots; flowers;  other relavent, Total Trade Value: 22392181008.0 US$
+Sub-Industry 7: Wheat, Related Milling Industry Products , Total Trade Value: 20577001893.0 US$
+Sub-Industry 8: Lac; other vegetable saps & extracts, Total Trade Value: 9268505148.0 US$
+Sub-Industry 9: Vegetable, relevent not specified elsewhere , Total Trade Value: 1717277934.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Works of Art; Collectors Pieces and Antiques'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Works of Art; Collectors Pieces and Antiques category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Works of Art; Collectors Pieces and Antiques category are:
+Sub-Industry 1: Art Works; Collectors Pieces & antiques, Total Trade Value: 776255560333.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Textile and Textiles Articles'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Textile and Textiles Articles category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Textile and Textiles Articles category are:
+Sub-Industry 1: Apparel; Clothing Accessories; knitted, Total Trade Value: 249285363682.0 US$
+Sub-Industry 2: Apparel; Clothing accessories; not knitted , Total Trade Value: 216310251857.0 US$
+Sub-Industry 3: Textiles and articles; clothing articles; rags, Total Trade Value: 74599096164.0 US$
+Sub-Industry 4: Cotton, Total Trade Value: 42284036114.0 US$
+Sub-Industry 5: Man-made filaments, Total Trade Value: 36925134076.0 US$
+Sub-Industry 6: Man-made staple fibres, Total Trade Value: 28336136632.0 US$
+Sub-Industry 7: Wadding, ropes&cables; articles thereof, Total Trade Value: 24224924358.0 US$
+Sub-Industry 8: Fabrics; knitted or crocheted, Total Trade Value: 20437128971.0 US$
+Sub-Industry 9: Textile fabrics; Industrial textile articles , Total Trade Value: 19844969135.0 US$
+Sub-Industry 10: Carpets;  Textile floor covers, Total Trade Value: 14793871043.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Arms; Ammunition and Accessories Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Arms; Ammunition and Accessories Thereof category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Arms; Ammunition and Accessories Thereof category are:
+Sub-Industry 1: Arms & ammunition; accessories thereof, Total Trade Value: 12647117505.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Raw Hides; Skin; Leather and Articles Thereof'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Raw Hides; Skin; Leather and Articles Thereof category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Raw Hides; Skin; Leather and Articles Thereof category are:
+Sub-Industry 1: Leather Artical; handbags & similar container, Total Trade Value: 79843440259.0 US$
+Sub-Industry 2: Raw hides/leather; skins (except furskins) , Total Trade Value: 14565721873.0 US$
+Sub-Industry 3: Furskins; artificial fur; thereof, Total Trade Value: 2391113922.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Machinery; Mechanical Appliances etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Machinery; Mechanical Appliances etc. category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Machinery; Mechanical Appliances etc. category are:
+Sub-Industry 1: Electrical; sound recorders&reproducers, Total Trade Value: 2607745976203.0 US$
+Sub-Industry 2: Nuclear reactors, boilers, parts thereof, Total Trade Value: 2149164155039.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Natural or Cultured Pearls; Precious Stones etc.'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Natural or Cultured Pearls; Precious Stones etc. category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Natural or Cultured Pearls; Precious Stones etc. category are:
+Sub-Industry 1: Natural pearls; Precious stones, jewellery; coin, Total Trade Value: 719378651626.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Animal or Vegetable Fat and Oil'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Animal or Vegetable Fat and Oil category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Animal or Vegetable Fat and Oil category are:
+Sub-Industry 1: Animal or vegetable fats and oils , Total Trade Value: 135163013100.0 US$
+"
+"
+                SELECT TOP 10 p.[Sub-Industry], SUM(f.[Trade Value (US$)]) AS TotalTradeValue
+                FROM FactTrade f
+                INNER JOIN DimCountry rc ON f.ReporterCountryId = rc.CountryID
+                INNER JOIN DimCountry pc ON f.PartnerCountryId = pc.CountryID
+                INNER JOIN DimProduct p ON f.ProductID = p.ProductID_SK
+                WHERE 
+                    f.CreationDateKey = '20221231' AND
+                    f.Is_Active = 'Y' AND
+                    pc.Country <> 'World' AND
+                    f.[Trade Flow Code] = 1 AND
+                    p.Industry = 'Pulp of Wood; or Other Fiber Cellulosic Material'
+                GROUP BY p.[Sub-Industry]
+                ORDER BY 2 DESC
+            ","I'm interested in the import division of sub-industries within the Pulp of Wood; or Other Fiber Cellulosic Material category in 20221231. Can you provide information on the top sub-industries, including their names and respective total trade values?","Certainly. In 20221231, the top sub-industries within the Pulp of Wood; or Other Fiber Cellulosic Material category are:
+Sub-Industry 1: Paper; Paperboard; articles Thereof, Total Trade Value: 169801377495.0 US$
+Sub-Industry 2: Wood pulp/waste; Paper's scrap, Total Trade Value: 46156872888.0 US$
+Sub-Industry 3: Books, Newspapers, Printing Industry , Total Trade Value: 32464536778.0 US$
+"
