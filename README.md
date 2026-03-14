@@ -9,7 +9,7 @@ it enables analysts, businesses, and non-experts alike to query complex internat
 trade data through a conversational interface.
 
 The system combines Retrieval-Augmented Generation (RAG), supervised fine-tuning on 
-domain-specific trade data, and a lightweight Flask interface — demonstrating that 
+domain-specific trade data, and a lightweight Flask interface demonstrating that 
 open-source LLMs can match proprietary solutions in specialised domains at a fraction 
 of the cost.
 
@@ -27,11 +27,11 @@ Flask Chat Interface        — natural language queries, narrative responses
 ```
 
 The pipeline has four stages:
-1. **Data Retrieval** — financial news, structured SQL trade databases, market signals
-2. **Data Engineering** — NLP preprocessing, conversion of tabular data into 
+1. **Data Retrieval:** financial news, structured SQL trade databases, market signals
+2. **Data Engineering:** NLP preprocessing, conversion of tabular data into 
                           1,500+ prompt-completion pairs
-3. **LLM Reasoning** — RAG via LlamaIndex + fine-tuned Llama 3 with quantization
-4. **User Interface** — Flask web app with conversational query interface
+3. **LLM Reasoning:** RAG via LlamaIndex + fine-tuned Llama 3 with quantization
+4. **User Interface:** Flask web app with conversational query interface
 
 ---
 
